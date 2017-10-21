@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A2316356-A85D-3FA4-B7D3-16726A1A8567}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>sc2api</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sc2api.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sc2apid</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sc2api.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sc2api</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sc2api.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sc2api</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sc2api.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sc2api</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;D:\Dev\s2client-api\contrib\civetweb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Dev/s2client-api/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Dev/s2client-api -BD:/Dev/s2client-api/build --check-stamp-file D:/Dev/s2client-api/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/src/CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Dev/s2client-api/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Dev/s2client-api -BD:/Dev/s2client-api/build --check-stamp-file D:/Dev/s2client-api/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/src/CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Dev/s2client-api/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Dev/s2client-api -BD:/Dev/s2client-api/build --check-stamp-file D:/Dev/s2client-api/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/src/CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Dev/s2client-api/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Dev/s2client-api -BD:/Dev/s2client-api/build --check-stamp-file D:/Dev/s2client-api/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/src/CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_map_info.cpp" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_action.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_agent.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_args.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_client.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_common.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_connection.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_coordinator.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_data.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_game_settings.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_proto_interface.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_proto_to_pods.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_replay_observer.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_score.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_typeenums.cc" />
+    <ClCompile Include="D:\Dev\s2client-api\src\sc2api\sc2_unit.cc" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_action.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_agent.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_api.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_args.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_client.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_common.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_connection.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_control_interfaces.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_coordinator.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_data.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_game_settings.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_gametypes.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_interfaces.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_map_info.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_proto_interface.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_proto_to_pods.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_replay_observer.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_score.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_typeenums.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_types.h" />
+    <ClInclude Include="D:\Dev\s2client-api\include\sc2api\sc2_unit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Dev\s2client-api\build\ZERO_CHECK.vcxproj">
+      <Project>{4E7484D3-BBC8-349C-8467-9C55BCCEA65F}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\s2client-api\build\contrib\civetweb\src\c-library.vcxproj">
+      <Project>{1FE8E257-AE97-3683-B74A-704BB867B89B}</Project>
+      <Name>c-library</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\s2client-api\build\contrib\protobuf\cmake\libprotobuf.vcxproj">
+      <Project>{8F75DB4F-2A67-3DCF-8B8E-871409972464}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\s2client-api\build\src\sc2protocol.vcxproj">
+      <Project>{35EEBCFD-DB21-3EFE-BD6C-E5D14DD8B934}</Project>
+      <Name>sc2protocol</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

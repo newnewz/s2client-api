@@ -1,0 +1,866 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35EEBCFD-DB21-3EFE-BD6C-E5D14DD8B934}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>sc2protocol</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sc2protocol.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sc2protocold</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sc2protocol.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sc2protocol</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sc2protocol.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sc2protocol</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sc2protocol.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sc2protocol</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Dev\s2client-api\build\generated;D:\Dev\s2client-api\src\..\contrib\SDL-mirror\include;D:\Dev\s2client-api\src\..\contrib\civetweb\include;D:\Dev\s2client-api\src\..\include;D:\Dev\s2client-api\contrib\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Dev/s2client-api/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Dev/s2client-api -BD:/Dev/s2client-api/build --check-stamp-file D:/Dev/s2client-api/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/src/CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Dev/s2client-api/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Dev/s2client-api -BD:/Dev/s2client-api/build --check-stamp-file D:/Dev/s2client-api/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/src/CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Dev/s2client-api/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Dev/s2client-api -BD:/Dev/s2client-api/build --check-stamp-file D:/Dev/s2client-api/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/src/CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Dev/s2client-api/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Dev/s2client-api -BD:/Dev/s2client-api/build --check-stamp-file D:/Dev/s2client-api/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/src/CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;D:\Dev\s2client-api\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\src\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\common.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/common.pb.cc, ../generated/common.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/common.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\common.pb.cc;D:\Dev\s2client-api\build\generated\common.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/common.pb.cc, ../generated/common.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/common.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\common.pb.cc;D:\Dev\s2client-api\build\generated\common.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/common.pb.cc, ../generated/common.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/common.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\common.pb.cc;D:\Dev\s2client-api\build\generated\common.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/common.pb.cc, ../generated/common.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/common.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/common.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\common.pb.cc;D:\Dev\s2client-api\build\generated\common.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\data.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/data.pb.cc, ../generated/data.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/data.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/data.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\data.pb.cc;D:\Dev\s2client-api\build\generated\data.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/data.pb.cc, ../generated/data.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/data.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/data.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\data.pb.cc;D:\Dev\s2client-api\build\generated\data.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/data.pb.cc, ../generated/data.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/data.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/data.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\data.pb.cc;D:\Dev\s2client-api\build\generated\data.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/data.pb.cc, ../generated/data.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/data.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/data.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\data.pb.cc;D:\Dev\s2client-api\build\generated\data.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\debug.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/debug.pb.cc, ../generated/debug.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/debug.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/debug.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\debug.pb.cc;D:\Dev\s2client-api\build\generated\debug.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/debug.pb.cc, ../generated/debug.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/debug.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/debug.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\debug.pb.cc;D:\Dev\s2client-api\build\generated\debug.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/debug.pb.cc, ../generated/debug.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/debug.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/debug.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\debug.pb.cc;D:\Dev\s2client-api\build\generated\debug.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/debug.pb.cc, ../generated/debug.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/debug.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/debug.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\debug.pb.cc;D:\Dev\s2client-api\build\generated\debug.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\error.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/error.pb.cc, ../generated/error.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/error.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/error.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\error.pb.cc;D:\Dev\s2client-api\build\generated\error.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/error.pb.cc, ../generated/error.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/error.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/error.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\error.pb.cc;D:\Dev\s2client-api\build\generated\error.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/error.pb.cc, ../generated/error.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/error.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/error.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\error.pb.cc;D:\Dev\s2client-api\build\generated\error.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/error.pb.cc, ../generated/error.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/error.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/error.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\error.pb.cc;D:\Dev\s2client-api\build\generated\error.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\query.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/query.pb.cc, ../generated/query.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/query.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/query.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\query.pb.cc;D:\Dev\s2client-api\build\generated\query.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/query.pb.cc, ../generated/query.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/query.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/query.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\query.pb.cc;D:\Dev\s2client-api\build\generated\query.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/query.pb.cc, ../generated/query.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/query.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/query.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\query.pb.cc;D:\Dev\s2client-api\build\generated\query.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/query.pb.cc, ../generated/query.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/query.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/query.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\query.pb.cc;D:\Dev\s2client-api\build\generated\query.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\raw.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/raw.pb.cc, ../generated/raw.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/raw.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/raw.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\raw.pb.cc;D:\Dev\s2client-api\build\generated\raw.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/raw.pb.cc, ../generated/raw.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/raw.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/raw.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\raw.pb.cc;D:\Dev\s2client-api\build\generated\raw.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/raw.pb.cc, ../generated/raw.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/raw.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/raw.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\raw.pb.cc;D:\Dev\s2client-api\build\generated\raw.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/raw.pb.cc, ../generated/raw.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/raw.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/raw.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\raw.pb.cc;D:\Dev\s2client-api\build\generated\raw.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\sc2api.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/sc2api.pb.cc, ../generated/sc2api.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/sc2api.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/sc2api.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\sc2api.pb.cc;D:\Dev\s2client-api\build\generated\sc2api.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/sc2api.pb.cc, ../generated/sc2api.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/sc2api.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/sc2api.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\sc2api.pb.cc;D:\Dev\s2client-api\build\generated\sc2api.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/sc2api.pb.cc, ../generated/sc2api.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/sc2api.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/sc2api.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\sc2api.pb.cc;D:\Dev\s2client-api\build\generated\sc2api.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/sc2api.pb.cc, ../generated/sc2api.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/sc2api.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/sc2api.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\sc2api.pb.cc;D:\Dev\s2client-api\build\generated\sc2api.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\score.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/score.pb.cc, ../generated/score.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/score.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/score.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\score.pb.cc;D:\Dev\s2client-api\build\generated\score.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/score.pb.cc, ../generated/score.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/score.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/score.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\score.pb.cc;D:\Dev\s2client-api\build\generated\score.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/score.pb.cc, ../generated/score.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/score.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/score.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\score.pb.cc;D:\Dev\s2client-api\build\generated\score.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/score.pb.cc, ../generated/score.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/score.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/score.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\score.pb.cc;D:\Dev\s2client-api\build\generated\score.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\spatial.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/spatial.pb.cc, ../generated/spatial.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/spatial.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/spatial.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\spatial.pb.cc;D:\Dev\s2client-api\build\generated\spatial.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/spatial.pb.cc, ../generated/spatial.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/spatial.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/spatial.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\spatial.pb.cc;D:\Dev\s2client-api\build\generated\spatial.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/spatial.pb.cc, ../generated/spatial.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/spatial.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/spatial.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\spatial.pb.cc;D:\Dev\s2client-api\build\generated\spatial.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/spatial.pb.cc, ../generated/spatial.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/spatial.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/spatial.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\spatial.pb.cc;D:\Dev\s2client-api\build\generated\spatial.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\ui.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../generated/ui.pb.cc, ../generated/ui.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/ui.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/ui.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Dev\s2client-api\build\generated\ui.pb.cc;D:\Dev\s2client-api\build\generated\ui.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../generated/ui.pb.cc, ../generated/ui.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/ui.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/ui.pb.cc.rule;D:\Dev\s2client-api\build\bin\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Dev\s2client-api\build\generated\ui.pb.cc;D:\Dev\s2client-api\build\generated\ui.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../generated/ui.pb.cc, ../generated/ui.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/ui.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/ui.pb.cc.rule;D:\Dev\s2client-api\build\bin\MinSizeRel\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Dev\s2client-api\build\generated\ui.pb.cc;D:\Dev\s2client-api\build\generated\ui.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../generated/ui.pb.cc, ../generated/ui.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\bin\protoc -I=D:/Dev/s2client-api/src/../protocol/s2clientprotocol --cpp_out=D:/Dev/s2client-api/build/generated D:/Dev/s2client-api/src/../protocol/s2clientprotocol/ui.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Dev/s2client-api/build/CMakeFiles/c417a7ad76b76d63f68bf6a250811d1a/ui.pb.cc.rule;D:\Dev\s2client-api\build\bin\RelWithDebInfo\protoc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Dev\s2client-api\build\generated\ui.pb.cc;D:\Dev\s2client-api\build\generated\ui.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\common.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\common.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\data.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\data.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\debug.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\debug.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\error.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\error.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\query.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\query.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\raw.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\raw.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\sc2api.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\sc2api.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\score.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\score.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\spatial.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\spatial.pb.cc"  />
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\ui.pb.h" />
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\ui.pb.cc"  />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\common.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\data.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\debug.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\error.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\query.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\raw.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\sc2api.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\score.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\spatial.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\ui.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Dev\s2client-api\build\ZERO_CHECK.vcxproj">
+      <Project>{4E7484D3-BBC8-349C-8467-9C55BCCEA65F}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\s2client-api\build\contrib\protobuf\cmake\libprotobuf.vcxproj">
+      <Project>{8F75DB4F-2A67-3DCF-8B8E-871409972464}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Dev\s2client-api\build\contrib\protobuf\cmake\protoc.vcxproj">
+      <Project>{45DA8748-83C7-3D56-A1D3-F3694FA2C434}</Project>
+      <Name>protoc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\common.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\data.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\debug.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\error.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\query.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\raw.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\sc2api.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\score.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\spatial.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Dev\s2client-api\build\generated\ui.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\common.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\data.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\debug.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\error.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\query.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\raw.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\sc2api.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\score.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\spatial.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Dev\s2client-api\build\generated\ui.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Dev\s2client-api\src\CMakeLists.txt" />
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\common.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\data.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\debug.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\error.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\query.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\raw.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\sc2api.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\score.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\spatial.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Dev\s2client-api\build\CMakeFiles\c417a7ad76b76d63f68bf6a250811d1a\ui.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\common.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\data.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\debug.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\error.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\query.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\raw.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\sc2api.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\score.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\spatial.proto" />
+    <None Include="D:\Dev\s2client-api\protocol\s2clientprotocol\ui.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{03DC2BDF-8B64-3AC7-974B-AE46D9B58684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{441E15F6-F910-3C1B-B659-7117CA809FF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8FA7C5DA-E08C-3478-BDE9-92B3AC42D90F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
